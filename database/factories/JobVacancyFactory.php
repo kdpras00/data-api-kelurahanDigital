@@ -29,7 +29,7 @@ class JobVacancyFactory extends Factory
             'start_date'        => $this->faker->dateTimeBetween('-1 year', 'now'),
             'end_date'          => $this->faker->dateTimeBetween('now', '+1 year'),
             'salary'            => $this->faker->randomFloat(2, 100000, 1000000),
-            'job_status'        => $this->faker->randomElement(['ongoing', 'completed']),
+            'job_status'        => $this->faker->randomElement(['open', 'closed', 'filled']),
         ];
     }
 }
